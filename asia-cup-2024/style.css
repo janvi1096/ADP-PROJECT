@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(135deg, #004aad, #0077b6);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background: #023e8a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 3px solid #0077b6;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 18px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #0077b6;
+}
+
+/* ---------- Container ---------- */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Headings ---------- */
+h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th {
+  background: #004aad;
+  color: white;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background: #f3f6fa;
+}
+
+/* ---------- Lists ---------- */
+ul {
+  list-style: square inside;
+  padding-left: 10px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
